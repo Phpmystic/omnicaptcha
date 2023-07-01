@@ -34,7 +34,7 @@ class OmniCaptchaServiceProvider extends ServiceProvider
             /** @var CaptchaServiceContract $reCaptchaService */
             $hCaptchaService = $app->make(HCaptchaService::class);
             /** @var CaptchaServiceContract $reCaptchaService */
-            $hCaptchaService = $app->make(CloudFlareCaptchaService::class);
+            $cloudFlareCaptcha = $app->make(CloudFlareCaptchaService::class);
 
             $serviceLocator->registerProvider(
                 'hcaptcha',
@@ -48,7 +48,7 @@ class OmniCaptchaServiceProvider extends ServiceProvider
 
             $serviceLocator->registerProvider(
                 'cloudflare',
-                $reCaptchaService
+                $cloudFlareCaptcha
             );
 
             return $serviceLocator;
