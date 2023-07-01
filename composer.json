@@ -1,0 +1,28 @@
+{
+    "name": "phpmystic/omnicaptcha",
+    "description": "OmniCaptcha is a powerful Laravel package designed to streamline the integration of captcha services into web applications. With OmniCaptcha, developers gain the flexibility to interact with multiple captcha service providers through a unified and consistent interface.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Phpmystic\\OmniCaptcha\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phpmystic\\OmniCaptcha\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Elmehdi El fatihi",
+            "email": "elmehdielfatihi1111@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^8.5"
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.7"
+    }
+}
