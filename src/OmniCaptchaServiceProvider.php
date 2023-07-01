@@ -74,7 +74,7 @@ class OmniCaptchaServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../config/omnicaptcha.php' => config_path('omnicaptcha.php'),
-        ], 'config');
+        ], 'omnicaptcha');
     }
 
     private function addValidationRules()
